@@ -4,22 +4,21 @@ public class Main{
     public static void main(String[] args){
 
         Scanner scanner= new Scanner(System.in);
+        //CALCULATING THE AREA OF A RECTANGLE
 
-        System.out.println("Enter your name: ");
-        String name=scanner.nextLine();
+        //ASK THE USER FOR THE LENGTH
+        System.out.println( "Enter the length of the rectangle: ");
+        double length = scanner.nextDouble();
 
-        System.out.println("What is your age :");
-        int age=scanner.nextInt();
+        //ASK THE USER FOR THE WIDTH
+        System.out.println("Enter the width of the rectangle: ");
+        double width =scanner.nextDouble();
 
-        System.out.println("What is your gpa: ");
-        double gpa=scanner.nextDouble();
+        //OPERATION TO CALCULATE THE AREA OF THE RECTANGLE
 
-        System.out.println("Are you a student: ");
-        boolean isStudent=scanner.nextBoolean();
+        double area= length*width;
+        System.out.println("The area of the rectangle is "+area +" unit sq");
 
-        System.out.println("Hello "+ name );
-        System.out.println("You are "+ age + " years old ");
-        System.out.println("You are a 1st class student with a gpa of "+gpa+" There's more room to get better!");
 
         scanner.close();
     }
